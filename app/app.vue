@@ -7,6 +7,7 @@
 </template>
 
 <style>
+  h1,
   h2 {
     font-family: 'Comic Sans MS', cursive;
     font-weight: bold;
