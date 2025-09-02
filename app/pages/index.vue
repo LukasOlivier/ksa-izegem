@@ -17,7 +17,8 @@
           Spring mee in het verhaal van KSA
         </h1>
         <NuxtLink
-          to="#inschrijven"
+          to="https://shop.ksaizegem.be/tokshop"
+          target="_blank"
           class="bg-orange-500 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 transition"
         >
           Laten we ons inschrijven

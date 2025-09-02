@@ -84,7 +84,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Wij zijn KSA Izegem (Katholieke studenten Actie), een jeugdbeweging die al van 1927 de lach op je zoons gezicht brengt. Dit aan de hand van een zaterdagmiddag met actieve en interessante spelletjes. Uiteraard is dit niet het enigste dat wij binnen KSA doen. Wij organiseren ook: kampen, weekends, speciale activiteiten voor jong en oud, groot en klein!',
+            'KSA Izegem: sinds 1927 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten / evenementen.',
         },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
