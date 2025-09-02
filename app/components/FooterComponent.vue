@@ -1,15 +1,22 @@
 <template>
   <footer class="bg-gray-50 py-6 mt-12">
     <div
-      class="container px-6 flex flex-col md:flex-row items-center justify-between w-7/12 mx-auto"
+      class="max-w-3xl w-full px-6 flex flex-col md:flex-row items-center justify-between mx-auto"
     >
-      <p class="">KSA Izegem © 2025</p>
-
+      <p>KSA Izegem © 2025</p>
       <div class="flex space-x-4 mt-4 md:mt-0">
-        <NuxtLink to="https://www.facebook.com/ksaizegem" target="_blank">
+        <NuxtLink
+          to="https://www.facebook.com/ksaizegem"
+          target="_blank"
+          aria-label="Facebook"
+        >
           <Icon name="mdi:facebook" size="40" />
         </NuxtLink>
-        <NuxtLink to="https://www.instagram.com/ksaizegem" target="_blank">
+        <NuxtLink
+          to="https://www.instagram.com/ksaizegem"
+          target="_blank"
+          aria-label="Instagram"
+        >
           <Icon name="mdi:instagram" size="40" />
         </NuxtLink>
       </div>
