@@ -4,7 +4,7 @@
 
     <!-- Hero Section -->
     <section class="container mx-auto px-6 my-40 max-w-5xl text-center">
-      <h1 class="text-5xl font-bold mb-20">Leeftijdsgroepen</h1>
+      <h1 class="md:text-5xl text-4xl font-bold mb-20">Leeftijdsgroepen</h1>
 
       <!-- Leeftijdsgroepen -->
       <div class="space-y-40">
@@ -19,13 +19,15 @@
           <NuxtImg
             :src="group.img"
             :alt="group.name"
-            class="object-contain max-w-md"
+            class="object-contain md:max-w-md max-w-sm"
           />
           <div class="text-left max-w-2xl">
             <h2 class="text-3xl font-bold text-orange-600 mb-2">
               {{ group.name }}
             </h2>
-            <p class="text-ksa_blue mb-3"> Leeftijd: {{ group.age }} </p>
+            <p class="text-ksa_blue mb-3 font-semibold">
+              Leeftijd: {{ group.age }}
+            </p>
             <p class="text-gray-700 leading-relaxed">
               {{ group.description }}
             </p>
