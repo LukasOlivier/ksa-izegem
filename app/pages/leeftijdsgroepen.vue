@@ -3,8 +3,8 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-6 my-20 max-w-5xl text-center">
-      <h1 class="text-5xl font-bold my-32">Leeftijdsgroepen</h1>
+    <section class="container mx-auto px-6 my-40 max-w-5xl text-center">
+      <h1 class="text-5xl font-bold mb-20">Leeftijdsgroepen</h1>
 
       <!-- Leeftijdsgroepen -->
       <div class="space-y-40">
@@ -12,18 +12,20 @@
           v-for="(group, idx) in groups"
           :key="group.name"
           :class="[
-            'relative flex flex-col items-center  justify-between',
+            'relative flex flex-col items-center justify-between gap-10',
             idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row',
           ]"
         >
-          <NuxtImg :src="group.img" :alt="group.name" class="object-contain" />
+          <NuxtImg
+            :src="group.img"
+            :alt="group.name"
+            class="object-contain max-w-md"
+          />
           <div class="text-left max-w-2xl">
-            <h2 class="text-3xl font-bold text-orange-600 mb-2">{{
-              group.name
-            }}</h2>
-            <p class="text-ksa_blue font-semibold mb-3">
-              Leeftijd: {{ group.age }}
-            </p>
+            <h2 class="text-3xl font-bold text-orange-600 mb-2">
+              {{ group.name }}
+            </h2>
+            <p class="text-ksa_blue mb-3"> Leeftijd: {{ group.age }} </p>
             <p class="text-gray-700 leading-relaxed">
               {{ group.description }}
             </p>
@@ -31,12 +33,10 @@
             <a
               :href="group.schedule"
               download
-              class="mt-4 px-3 py-2 text-orange-500 rounded border-2 border-orange-500 transition inline-block hover:bg-orange-600 hover:text-white font-medium"
+              class="mt-4 px-3 py-2 text-orange-500 rounded border-2 border-orange-500 transition hover:bg-orange-600 hover:text-white font-medium inline-flex items-center gap-2"
             >
-              <div class="flex items-center font-semibold gap-2">
-                <Icon name="mdi:download" size="22" />
-                Programma boekje
-              </div>
+              <Icon name="mdi:download" size="22" />
+              Programma boekje
             </a>
           </div>
         </div>

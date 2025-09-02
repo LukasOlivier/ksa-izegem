@@ -19,7 +19,7 @@
         <NuxtLink
           to="https://shop.ksaizegem.be/tokshop"
           target="_blank"
-          class="bg-orange-500 text-white px-6 py-3 rounded-full font-medium hover:bg-orange-600 transition"
+          class="bg-orange-600 font-semibold text-white px-6 py-3 rounded-full hover:bg-orange-700 transition"
         >
           Laten we ons inschrijven
         </NuxtLink>
@@ -97,3 +97,9 @@
     <FooterComponent />
   </div>
 </template>
+
+<style scoped>
+  h1 {
+    font-style: normal !important;
+  }
+</style>
