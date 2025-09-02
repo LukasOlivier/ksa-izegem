@@ -3,7 +3,6 @@
     <HeaderComponent />
 
     <!-- Hero Section -->
-    <!-- Hero Section -->
     <section
       class="relative h-[90vh] flex items-center justify-center text-center text-white"
     >
@@ -14,7 +13,7 @@
       />
       <div class="absolute inset-0 bg-black/40" />
       <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-12">
           Spring mee in het verhaal van KSA
         </h1>
         <NuxtLink
@@ -24,8 +23,6 @@
           Laten we ons inschrijven
         </NuxtLink>
       </div>
-
-      <!-- 👇 SVG wave at bottom -->
       <svg
         class="absolute left-0 w-full h-24 text-white block pointer-events-none -bottom-[1px]"
         viewBox="0 0 1440 320"
@@ -41,7 +38,7 @@
 
     <!-- Algemeen Section -->
     <section
-      class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center w-7/12"
+      class="max-w-4xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
     >
       <div>
         <h2 class="text-5xl mb-6">Algemeen</h2>
@@ -70,10 +67,8 @@
     </section>
 
     <!-- Leeftijdsgroepen Section -->
-    <section id="leeftijdsgroepen" class="py-16 w-6/12 mx-auto">
-      <div
-        class="container mx-auto px-6 grid md:grid-cols-1 gap-10 items-center"
-      >
+    <section id="leeftijdsgroepen" class="py-16 max-w-3xl mx-auto">
+      <div class="px-6 grid gap-10 items-center">
         <div class="flex justify-center">
           <NuxtImg
             src="/index-leeftijdsgroepen.png"
@@ -81,7 +76,7 @@
             class="w-full"
           />
         </div>
-        <div class="w-1/2 mx-auto">
+        <div class="mx-auto w-full md:w-1/2">
           <h2 class="text-6xl mb-6 text-center">Leeftijdsgroepen</h2>
           <p class="text-gray-700 mb-6">
             Vraag je je af hoe de KSA te werk gaat en waar je zoon terecht zal
