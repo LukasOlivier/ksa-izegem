@@ -22,7 +22,7 @@
             class="object-contain md:max-w-md max-w-sm"
           />
           <div class="text-left max-w-2xl">
-            <h2 class="text-3xl font-bold text-orange-600 mb-2">
+            <h2 class="text-5xl font-bold text-orange-600 mb-2">
               {{ group.name }}
             </h2>
             <p class="text-ksa_blue mb-3 font-semibold">

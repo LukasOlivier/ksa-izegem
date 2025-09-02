@@ -9,8 +9,8 @@
 <style>
   h1,
   h2 {
-    font-family: 'Kalam', cursive;
-    font-weight: bold;
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: 600;
   }
 
   * {

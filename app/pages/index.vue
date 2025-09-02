@@ -13,7 +13,7 @@
       />
       <div class="absolute inset-0 bg-black/40" />
       <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold mb-12">
+        <h1 class="text-4xl md:text-7xl font-semibold mb-12">
           Spring mee in het verhaal van KSA
         </h1>
         <NuxtLink
@@ -74,11 +74,11 @@
           <NuxtImg
             src="/index-leeftijdsgroepen.png"
             alt="KSA spelen"
-            class="w-full"
+            class="w-2/3 max-w-md"
           />
         </div>
         <div class="mx-auto w-full md:w-2/3">
-          <h2 class="md:text-6xl text-4xl mb-6">Leeftijdsgroepen</h2>
+          <h2 class="md:text-5xl text-4xl mb-6">Leeftijdsgroepen</h2>
           <p class="text-gray-700 mb-6">
             Vraag je je af hoe de KSA te werk gaat en waar je zoon terecht zal
             komen? Neem dan zeker eens een kijkje bij onze leeftijdsgroepen en
