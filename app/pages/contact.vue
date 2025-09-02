@@ -3,40 +3,33 @@
     <HeaderComponent />
 
     <!-- Locatie Section -->
-    <section class="container px-6 mx-auto pb-16 mt-32 text-center max-w-4xl">
-      <h1 class="text-5xl font-bold mb-8">Locatie</h1>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+    <section class="px-6 mx-auto pb-20 mt-32 max-w-4xl">
+      <h1 class="text-5xl font-extrabold mb-12 text-center">Locatie</h1>
+
+      <div class="flex flex-col items-center gap-12">
         <!-- Map -->
-        <div class="w-full">
+        <div
+          class="w-full max-w-[900px] h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+        >
           <iframe
-            class="w-full border border-gray-200 shadow-lg"
+            class="w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.354114646018!2d3.2022289769829917!3d50.913573771685316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c33aeb8f3d5c19%3A0x5e6e4d8a0b8b41e!2sMeensestraat%2096%2C%208870%20Izegem!5e0!3m2!1snl!2sbe!4v1693664400000!5m2!1snl!2sbe"
-            width="600"
-            height="600"
-            style="border: 0"
-            :allowfullscreen="false"
+            allowfullscreen
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           />
         </div>
 
         <!-- Address -->
-        <div class="text-lg grid place-items-center">
-          <Icon
-            name="mdi:map-marker"
-            class="text-orange-500 inline-block mr-2"
-            size="42"
-          />
-          <span>Izegem 8870 <span class="block">Meensestraat 96</span></span>
-        </div>
+        <p class="text-xl text-gray-700">Meensestraat 96 - 8870 Izegem</p>
       </div>
     </section>
 
     <!-- Onze Gegevens Section -->
-    <section class="container mx-auto px-6 py-16 text-center max-w-4xl">
-      <h2 class="text-5xl font-bold mb-12">Onze gegevens</h2>
+    <section class="px-6 mx-auto py-20 max-w-4xl text-center">
+      <h2 class="text-5xl font-extrabold mb-12">Onze gegevens</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 justify-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Kabouters -->
         <div>
           <NuxtImg
@@ -52,7 +45,7 @@
           </p>
         </div>
 
-        <!-- Piejongknapen -->
+        <!-- Piepjongknapen -->
         <div>
           <NuxtImg
             src="/piepjongknapen.png"

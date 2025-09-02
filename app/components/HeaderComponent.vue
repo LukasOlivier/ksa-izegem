@@ -29,10 +29,7 @@
             class="hover:border-b border-black pb-1 flex items-center gap-1"
           >
             Thunderball
-            <Icon
-              name="i-heroicons-arrow-top-right-on-square-20-solid"
-              class="w-4 h-4 inline-block"
-            />
+            <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
         <li>
@@ -42,10 +39,7 @@
             class="hover:border-b border-black pb-1 flex items-center gap-1"
           >
             Webshops
-            <Icon
-              name="i-heroicons-arrow-top-right-on-square-20-solid"
-              class="w-4 h-4 inline-block"
-            />
+            <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
         <!-- Button -->
@@ -55,10 +49,7 @@
           class="ml-4 px-4 py-2 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
         >
           Inschrijven
-          <Icon
-            name="i-heroicons-arrow-top-right-on-square-20-solid"
-            class="w-4 h-4 inline-block"
-          />
+          <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
         </NuxtLink>
       </ul>
     </nav>
