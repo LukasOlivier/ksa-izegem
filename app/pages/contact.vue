@@ -3,7 +3,7 @@
     <HeaderComponent />
 
     <!-- Locatie Section -->
-    <section class="px-6 mx-auto pb-20 mt-32 max-w-4xl">
+    <section class="px-6 mx-auto pb-20 mt-32 max-w-5xl">
       <h1 class="text-5xl font-extrabold mb-12 text-center">Locatie</h1>
 
       <div class="flex flex-col items-center gap-12">
@@ -26,7 +26,7 @@
     </section>
 
     <!-- Onze Gegevens Section -->
-    <section class="px-6 mx-auto py-20 max-w-4xl text-center">
+    <section class="px-6 mx-auto py-20 max-w-5xl text-center">
       <h2 class="text-5xl font-extrabold mb-12">Onze gegevens</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">

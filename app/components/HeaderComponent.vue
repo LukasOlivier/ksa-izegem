@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white shadow-sm fixed top-0 inset-x-0 z-50">
     <nav
-      class="max-w-4xl w-full mx-auto flex items-center justify-between py-4 px-4"
+      class="max-w-5xl w-full mx-auto flex items-center justify-between py-4 px-4"
     >
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center transition hover:scale-95">
