@@ -76,8 +76,8 @@
             class="w-full"
           />
         </div>
-        <div class="mx-auto w-full md:w-1/2">
-          <h2 class="text-6xl mb-6 text-center">Leeftijdsgroepen</h2>
+        <div class="mx-auto w-full md:w-2/3">
+          <h2 class="text-6xl mb-6">Leeftijdsgroepen</h2>
           <p class="text-gray-700 mb-6">
             Vraag je je af hoe de KSA te werk gaat en waar je zoon terecht zal
             komen? Neem dan zeker eens een kijkje bij onze leeftijdsgroepen en
