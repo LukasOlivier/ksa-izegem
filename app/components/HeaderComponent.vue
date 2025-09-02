@@ -9,48 +9,50 @@
       </NuxtLink>
 
       <!-- Menu -->
-      <ul class="hidden md:flex items-center space-x-6 font-medium">
-        <li>
-          <NuxtLink
-            to="/leeftijdsgroepen"
-            class="hover:border-b border-black pb-1"
+      <ul
+        class="hidden md:flex items-center space-x-6 font-medium translate-y-1"
+      >
+        <li class="hover:border-b border-black pb-1">
+          <NuxtLink to="/leeftijdsgroepen" class="flex items-center gap-1"
             >Leeftijdsgroepen</NuxtLink
           >
         </li>
-        <li>
-          <NuxtLink to="/contact" class="hover:border-b border-black pb-1"
+        <li class="hover:border-b border-black pb-1">
+          <NuxtLink to="/contact" class="flex items-center gap-1"
             >Contact</NuxtLink
           >
         </li>
-        <li>
+        <li class="hover:border-b border-black pb-1">
           <NuxtLink
             to="https://thunderball.ksaizegem.be"
             target="_blank"
-            class="hover:border-b border-black pb-1 flex items-center gap-1"
+            class="flex items-center gap-1"
           >
             Thunderball
             <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
-        <li>
+        <li class="hover:border-b border-black pb-1">
           <NuxtLink
             to="https://shop.ksaizegem.be"
             target="_blank"
-            class="hover:border-b border-black pb-1 flex items-center gap-1"
+            class="flex items-center gap-1"
           >
             Webshops
             <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
         <!-- Button -->
-        <NuxtLink
-          to="https://shop.ksaizegem.be/tokshop"
-          target="_blank"
-          class="ml-4 px-4 py-2 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
-        >
-          Inschrijven
-          <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
-        </NuxtLink>
+        <li>
+          <NuxtLink
+            to="https://shop.ksaizegem.be/tokshop"
+            target="_blank"
+            class="ml-4 px-4 py-2 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
+          >
+            Inschrijven
+            <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
   </header>
