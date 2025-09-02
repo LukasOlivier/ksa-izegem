@@ -47,7 +47,7 @@
           <NuxtLink
             to="https://shop.ksaizegem.be/tokshop"
             target="_blank"
-            class="ml-4 px-4 py-2 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
+            class="ml-4 px-4 py-2 -translate-y-1 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
           >
             Inschrijven
             <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
