@@ -9,9 +9,8 @@
 <style>
   h1,
   h2 {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Kalam', cursive;
     font-weight: bold;
-    font-style: italic;
   }
 
   * {

@@ -68,7 +68,7 @@
     </section>
 
     <!-- Leeftijdsgroepen Section -->
-    <section id="leeftijdsgroepen" class="py-16 max-w-5xl mx-auto">
+    <section id="leeftijdsgroepen" class="md:py-16 max-w-5xl mx-auto pb-16">
       <div class="px-6 grid gap-10 items-center">
         <div class="flex justify-center">
           <NuxtImg
@@ -97,9 +97,3 @@
     <FooterComponent />
   </div>
 </template>
-
-<style scoped>
-  h1 {
-    font-style: normal !important;
-  }
-</style>
