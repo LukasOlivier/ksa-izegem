@@ -57,65 +57,104 @@
       >
         <Icon
           :name="isMenuOpen ? 'i-heroicons-x-mark' : 'i-heroicons-bars-3'"
-          class="w-6 h-6"
+          class="w-6 h-6 transition-transform duration-200 ease-in-out"
+          :class="{ 'rotate-90': isMenuOpen }"
         />
       </button>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div
-      v-if="isMenuOpen"
-      class="md:hidden fixed inset-0 top-[72px] bg-black bg-opacity-50 z-40"
-      @click="isMenuOpen = false"
-    />
-
     <!-- Mobile Menu -->
-    <div
-      v-if="isMenuOpen"
-      class="md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-50 border-t border-gray-200"
+    <Transition
+      enter-active-class="transition-all duration-300 ease-out"
+      enter-from-class="opacity-0 -translate-y-4"
+      enter-to-class="opacity-100 translate-y-0"
+      leave-active-class="transition-all duration-200 ease-in"
+      leave-from-class="opacity-100 translate-y-0"
+      leave-to-class="opacity-0 -translate-y-4"
     >
-      <ul class="py-2">
-        <!-- Navigation Links -->
-        <li v-for="navLink in navigationLinks" :key="navLink.url">
-          <NuxtLink
-            :to="navLink.url"
-            class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
-            @click="closeMenu"
+      <div
+        v-if="isMenuOpen"
+        class="md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-50"
+      >
+        <ul class="py-2">
+          <!-- Navigation Links -->
+          <li
+            v-for="(navLink, index) in navigationLinks"
+            :key="navLink.url"
+            class="transform transition-all duration-300 ease-out"
+            :class="
+              isMenuOpen
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-4 opacity-0'
+            "
+            :style="{ transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms' }"
           >
-            {{ navLink.title }}
-          </NuxtLink>
-        </li>
-        <!-- External Links -->
-        <li v-for="externalLink in externalLinks" :key="externalLink.url">
-          <NuxtLink
-            :to="externalLink.url"
-            target="_blank"
-            class="flex items-center gap-2 px-6 py-3 hover:bg-gray-50 transition-colors"
-            @click="closeMenu"
+            <NuxtLink
+              :to="navLink.url"
+              class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
+              @click="closeMenu"
+            >
+              {{ navLink.title }}
+            </NuxtLink>
+          </li>
+          <!-- External Links -->
+          <li
+            v-for="(externalLink, index) in externalLinks"
+            :key="externalLink.url"
+            class="transform transition-all duration-300 ease-out"
+            :class="
+              isMenuOpen
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-4 opacity-0'
+            "
+            :style="{
+              transitionDelay: isMenuOpen
+                ? `${(navigationLinks.length + index) * 50}ms`
+                : '0ms',
+            }"
           >
-            {{ externalLink.title }}
-            <Icon
-              name="i-heroicons-arrow-top-right-on-square-20-solid"
-              class="w-4 h-4"
-            />
-          </NuxtLink>
-        </li>
-        <li class="border-t border-gray-200 mt-2 pt-2">
-          <NuxtLink
-            :to="specialButton.url"
-            target="_blank"
-            class="flex items-center justify-center gap-2 mx-6 my-3 px-4 py-3 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition"
-            @click="closeMenu"
+            <NuxtLink
+              :to="externalLink.url"
+              target="_blank"
+              class="flex items-center gap-2 px-6 py-3 hover:bg-gray-50 transition-colors"
+              @click="closeMenu"
+            >
+              {{ externalLink.title }}
+              <Icon
+                name="i-heroicons-arrow-top-right-on-square-20-solid"
+                class="w-4 h-4"
+              />
+            </NuxtLink>
+          </li>
+          <li
+            class="border-t border-gray-200 mt-2 pt-2 transform transition-all duration-300 ease-out"
+            :class="
+              isMenuOpen
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-4 opacity-0'
+            "
+            :style="{
+              transitionDelay: isMenuOpen
+                ? `${(navigationLinks.length + externalLinks.length) * 50}ms`
+                : '0ms',
+            }"
           >
-            {{ specialButton.title }}
-            <Icon
-              name="i-heroicons-arrow-top-right-on-square-20-solid"
-              class="w-4 h-4"
-            />
-          </NuxtLink>
-        </li>
-      </ul>
-    </div>
+            <NuxtLink
+              :to="specialButton.url"
+              target="_blank"
+              class="flex items-center justify-center gap-2 mx-6 my-3 px-4 py-3 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition"
+              @click="closeMenu"
+            >
+              {{ specialButton.title }}
+              <Icon
+                name="i-heroicons-arrow-top-right-on-square-20-solid"
+                class="w-4 h-4"
+              />
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </Transition>
   </header>
 </template>
 
