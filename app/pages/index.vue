@@ -1,7 +1,7 @@
 <script setup lang="ts">
   // SEO configuration for homepage
   useSeoMeta({
-    title: 'Home - KSA Izegem',
+    title: 'Home',
     description:
       'KSA Izegem biedt sinds 1927 plezier voor kinderen en jongeren met zaterdagnamiddagspelletjes, kampen, weekends en leuke activiteiten in Izegem.',
     ogTitle: 'KSA Izegem',

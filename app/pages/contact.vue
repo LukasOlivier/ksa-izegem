@@ -1,7 +1,7 @@
 <script setup lang="ts">
   // SEO configuration for contact page
   useSeoMeta({
-    title: 'Contact - KSA Izegem',
+    title: 'Contact',
     description:
       'Neem contact op met KSA Izegem. Vind ons op Meensestraat 96, 8870 Izegem. Contactgegevens en locatie-informatie voor ouders en geïnteresseerden.',
     ogTitle: 'Contact - KSA Izegem',

@@ -1,9 +1,9 @@
 <script setup lang="ts">
   // SEO configuration for leeftijdsgroepen page
   useSeoMeta({
-    title: 'Leeftijdsgroepen - KSA Izegem',
+    title: 'Leeftijdsgroepen',
     description:
-      'Ontdek alle leeftijdsgroepen bij KSA Izegem: Kabouters, Knapen, Jongknapen, Jonghernieuwers en Hernieuwers. Voor elk kind van 6 tot 18 jaar is er een passende groep.',
+      'Ontdek alle leeftijdsgroepen bij KSA Izegem: Kabouters, Knapen, Jongknapen, Jonghernieuwers en Hernieuwers.',
     ogTitle: 'Leeftijdsgroepen - KSA Izegem',
     ogDescription:
       'Van 6 tot 18 jaar: ontdek alle leeftijdsgroepen bij KSA Izegem. Kabouters, Knapen, Jongknapen, Jonghernieuwers en Hernieuwers met elk hun eigen activiteiten.',
