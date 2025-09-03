@@ -102,11 +102,6 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
   ],
 
-  // SEO Module Configuration
-  seo: {
-    redirectToCanonicalSiteUrl: true,
-  },
-
   site: {
     url: 'https://ksaizegem.be',
     name: 'KSA Izegem',
