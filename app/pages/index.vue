@@ -82,7 +82,7 @@
           activiteiten voor jong en oud, groot en klein!
         </p>
         <NuxtLink
-          to="#contact"
+          to="/contact"
           class="bg-ksa_blue text-white px-6 py-3 rounded-full hover:bg-blue-400 transition"
         >
           Ik heb vragen!
