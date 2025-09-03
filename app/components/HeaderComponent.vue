@@ -13,6 +13,9 @@
         class="hidden md:flex items-center space-x-6 font-medium translate-y-1"
       >
         <li class="hover:border-b border-black pb-1">
+          <NuxtLink to="/" class="flex items-center gap-1">Home</NuxtLink>
+        </li>
+        <li class="hover:border-b border-black pb-1">
           <NuxtLink to="/leeftijdsgroepen" class="flex items-center gap-1"
             >Leeftijdsgroepen</NuxtLink
           >
@@ -82,6 +85,15 @@
       class="md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-50 border-t border-gray-200"
     >
       <ul class="py-2">
+        <li>
+          <NuxtLink
+            to="/"
+            class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
+            @click="closeMenu"
+          >
+            Home
+          </NuxtLink>
+        </li>
         <li>
           <NuxtLink
             to="/leeftijdsgroepen"
