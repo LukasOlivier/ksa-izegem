@@ -99,5 +99,19 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/seo',
   ],
+
+  // SEO Module Configuration
+  seo: {
+    redirectToCanonicalSiteUrl: true,
+  },
+
+  site: {
+    url: 'https://ksaizegem.be',
+    name: 'KSA Izegem',
+    description:
+      'KSA Izegem: sinds 1927 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten voor kinderen en jongeren in Izegem.',
+    defaultLocale: 'nl-BE',
+  },
 });

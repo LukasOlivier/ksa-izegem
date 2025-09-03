@@ -1,3 +1,33 @@
+<script setup lang="ts">
+  // SEO configuration for homepage
+  useSeoMeta({
+    title: 'Home - KSA Izegem',
+    description:
+      'KSA Izegem biedt sinds 1927 plezier voor kinderen en jongeren met zaterdagnamiddagspelletjes, kampen, weekends en leuke activiteiten in Izegem.',
+    ogTitle: 'KSA Izegem',
+    ogDescription:
+      'Ontdek KSA Izegem: een jeugdbeweging vol avontuur, vriendschap en plezier voor alle leeftijdsgroepen. Sinds 1927 actief in Izegem.',
+    ogImage: '/index-hero.jpeg',
+    ogImageAlt: 'KSA Izegem kinderen aan het spelen',
+    ogType: 'website',
+    ogUrl: 'https://ksaizegem.be',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'KSA Izegem',
+    twitterDescription:
+      'Ontdek KSA Izegem: een jeugdbeweging vol avontuur, vriendschap en plezier voor alle leeftijdsgroepen.',
+    twitterImage: '/index-hero.jpeg',
+    robots: 'index,follow',
+    author: 'KSA Izegem',
+    keywords:
+      'KSA, Izegem, jeugdbeweging, kinderen, jongeren, kampen, activiteiten, katholiek, spelletjes, weekend, West-Vlaanderen',
+  });
+
+  // Canonical URL
+  useHead({
+    link: [{ rel: 'canonical', href: 'https://ksaizegem.be' }],
+  });
+</script>
+
 <template>
   <div>
     <HeaderComponent />

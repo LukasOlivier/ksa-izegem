@@ -1,3 +1,25 @@
+<script setup lang="ts">
+  // SEO configuration for contact page
+  useSeoMeta({
+    title: 'Contact - KSA Izegem',
+    description:
+      'Neem contact op met KSA Izegem. Vind ons op Meensestraat 96, 8870 Izegem. Contactgegevens en locatie-informatie voor ouders en geïnteresseerden.',
+    ogTitle: 'Contact - KSA Izegem',
+    ogDescription:
+      'Contacteer KSA Izegem voor inschrijvingen, vragen over activiteiten of meer informatie. Gelegen op Meensestraat 96, Izegem.',
+    ogType: 'website',
+    ogUrl: 'https://ksaizegem.be/contact',
+    robots: 'index,follow',
+    keywords:
+      'KSA Izegem contact, Meensestraat 96 Izegem, jeugdbeweging contact, inschrijvingen KSA',
+  });
+
+  // Canonical URL
+  useHead({
+    link: [{ rel: 'canonical', href: 'https://ksaizegem.be/contact' }],
+  });
+</script>
+
 <template>
   <div>
     <HeaderComponent />

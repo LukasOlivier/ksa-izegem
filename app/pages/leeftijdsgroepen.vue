@@ -1,55 +1,25 @@
-<template>
-  <div>
-    <HeaderComponent />
+<script setup lang="ts">
+  // SEO configuration for leeftijdsgroepen page
+  useSeoMeta({
+    title: 'Leeftijdsgroepen - KSA Izegem',
+    description:
+      'Ontdek alle leeftijdsgroepen bij KSA Izegem: Kabouters, Knapen, Jongknapen, Jonghernieuwers en Hernieuwers. Voor elk kind van 6 tot 18 jaar is er een passende groep.',
+    ogTitle: 'Leeftijdsgroepen - KSA Izegem',
+    ogDescription:
+      'Van 6 tot 18 jaar: ontdek alle leeftijdsgroepen bij KSA Izegem. Kabouters, Knapen, Jongknapen, Jonghernieuwers en Hernieuwers met elk hun eigen activiteiten.',
+    ogType: 'website',
+    ogUrl: 'https://ksaizegem.be/leeftijdsgroepen',
+    robots: 'index,follow',
+    keywords:
+      'KSA leeftijdsgroepen, Kabouters, Knapen, Jongknapen, Jonghernieuwers, Hernieuwers, jeugdbeweging Izegem, kinderen 6-18 jaar',
+  });
 
-    <!-- Hero Section -->
-    <section class="container mx-auto px-6 my-40 max-w-5xl text-center">
-      <h1 class="md:text-5xl text-4xl font-bold mb-20">Leeftijdsgroepen</h1>
+  // Canonical URL
+  useHead({
+    link: [{ rel: 'canonical', href: 'https://ksaizegem.be/leeftijdsgroepen' }],
+  });
 
-      <!-- Leeftijdsgroepen -->
-      <div class="space-y-40">
-        <div
-          v-for="(group, idx) in groups"
-          :key="group.name"
-          :class="[
-            'relative flex flex-col items-center justify-between gap-10',
-            idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row',
-          ]"
-        >
-          <NuxtImg
-            :src="group.img"
-            :alt="group.name"
-            class="object-contain md:max-w-md max-w-sm"
-          />
-          <div class="text-left max-w-2xl">
-            <h2 class="text-5xl font-bold text-orange-600 mb-2">
-              {{ group.name }}
-            </h2>
-            <p class="text-ksa_blue mb-3 font-semibold">
-              Leeftijd: {{ group.age }}
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              {{ group.description }}
-            </p>
-            <!-- Download button with icon -->
-            <a
-              :href="group.schedule"
-              download
-              class="mt-4 px-3 py-2 text-orange-500 rounded border-2 border-orange-500 transition hover:bg-orange-600 hover:text-white font-medium inline-flex items-center gap-2"
-            >
-              <Icon name="mdi:download" size="22" />
-              Programma boekje
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <FooterComponent />
-  </div>
-</template>
-
-<script setup>
+  // Data for the groups
   const groups = [
     {
       name: 'Kabouters',
@@ -107,3 +77,54 @@
     },
   ];
 </script>
+
+<template>
+  <div>
+    <HeaderComponent />
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 my-40 max-w-5xl text-center">
+      <h1 class="md:text-5xl text-4xl font-bold mb-20">Leeftijdsgroepen</h1>
+
+      <!-- Leeftijdsgroepen -->
+      <div class="space-y-40">
+        <div
+          v-for="(group, idx) in groups"
+          :key="group.name"
+          :class="[
+            'relative flex flex-col items-center justify-between gap-10',
+            idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row',
+          ]"
+        >
+          <NuxtImg
+            :src="group.img"
+            :alt="group.name"
+            class="object-contain md:max-w-md max-w-sm"
+          />
+          <div class="text-left max-w-2xl">
+            <h2 class="text-5xl font-bold text-orange-600 mb-2">
+              {{ group.name }}
+            </h2>
+            <p class="text-ksa_blue mb-3 font-semibold">
+              Leeftijd: {{ group.age }}
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              {{ group.description }}
+            </p>
+            <!-- Download button with icon -->
+            <a
+              :href="group.schedule"
+              download
+              class="mt-4 px-3 py-2 text-orange-500 rounded border-2 border-orange-500 transition hover:bg-orange-600 hover:text-white font-medium inline-flex items-center gap-2"
+            >
+              <Icon name="mdi:download" size="22" />
+              Programma boekje
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <FooterComponent />
+  </div>
+</template>
