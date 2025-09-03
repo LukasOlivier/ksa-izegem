@@ -78,8 +78,6 @@
 
 <template>
   <div>
-    <HeaderComponent />
-
     <!-- Hero Section -->
     <section class="container mx-auto px-6 my-40 max-w-5xl text-center">
       <h1 class="md:text-5xl text-4xl font-bold mb-20">Leeftijdsgroepen</h1>
@@ -124,7 +122,5 @@
         </div>
       </div>
     </section>
-
-    <FooterComponent />
   </div>
 </template>

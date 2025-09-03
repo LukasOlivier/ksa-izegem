@@ -22,8 +22,6 @@
 
 <template>
   <div>
-    <HeaderComponent />
-
     <!-- Locatie Section -->
     <section class="px-6 mx-auto pb-20 mt-40 max-w-5xl">
       <h1 class="text-5xl font-extrabold mb-12 text-center">Locatie</h1>
@@ -161,7 +159,5 @@
         </div>
       </div>
     </section>
-
-    <FooterComponent />
   </div>
 </template>

@@ -30,8 +30,6 @@
 
 <template>
   <div>
-    <HeaderComponent />
-
     <!-- Hero Section -->
     <section
       class="relative h-[90vh] flex items-center justify-center text-center text-white"
@@ -124,6 +122,5 @@
         </div>
       </div>
     </section>
-    <FooterComponent />
   </div>
 </template>
