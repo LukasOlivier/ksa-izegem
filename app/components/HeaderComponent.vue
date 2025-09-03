@@ -12,47 +12,37 @@
       <ul
         class="hidden md:flex items-center space-x-6 font-medium translate-y-1"
       >
-        <li class="hover:border-b border-black pb-1">
-          <NuxtLink to="/" class="flex items-center gap-1">Home</NuxtLink>
+        <li
+          v-for="navLink in navigationLinks"
+          :key="navLink.url"
+          class="hover:border-b border-black pb-1"
+        >
+          <NuxtLink :to="navLink.url" class="flex items-center gap-1">
+            {{ navLink.title }}
+          </NuxtLink>
         </li>
-        <li class="hover:border-b border-black pb-1">
-          <NuxtLink to="/leeftijdsgroepen" class="flex items-center gap-1"
-            >Leeftijdsgroepen</NuxtLink
-          >
-        </li>
-        <li class="hover:border-b border-black pb-1">
-          <NuxtLink to="/contact" class="flex items-center gap-1"
-            >Contact</NuxtLink
-          >
-        </li>
-        <li class="hover:border-b border-black pb-1">
+        <li
+          v-for="externalLink in externalLinks"
+          :key="externalLink.url"
+          class="hover:border-b border-black pb-1"
+        >
           <NuxtLink
-            to="https://thunderball.ksaizegem.be"
+            :to="externalLink.url"
             target="_blank"
             class="flex items-center gap-1"
           >
-            Thunderball
+            {{ externalLink.title }}
             <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
-        <li class="hover:border-b border-black pb-1">
-          <NuxtLink
-            to="https://shop.ksaizegem.be"
-            target="_blank"
-            class="flex items-center gap-1"
-          >
-            Webshops
-            <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
-          </NuxtLink>
-        </li>
-        <!-- Button -->
+        <!-- Special Button -->
         <li>
           <NuxtLink
-            to="https://shop.ksaizegem.be/tokshop"
+            :to="specialButton.url"
             target="_blank"
             class="ml-4 px-4 py-2 -translate-y-1 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition flex items-center gap-1"
           >
-            Inschrijven
+            {{ specialButton.title }}
             <Icon name="i-heroicons-arrow-top-right-on-square-20-solid" />
           </NuxtLink>
         </li>
@@ -85,55 +75,25 @@
       class="md:hidden fixed top-[72px] left-0 right-0 bg-white shadow-lg z-50 border-t border-gray-200"
     >
       <ul class="py-2">
-        <li>
+        <!-- Navigation Links -->
+        <li v-for="navLink in navigationLinks" :key="navLink.url">
           <NuxtLink
-            to="/"
+            :to="navLink.url"
             class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
             @click="closeMenu"
           >
-            Home
+            {{ navLink.title }}
           </NuxtLink>
         </li>
-        <li>
+        <!-- External Links -->
+        <li v-for="externalLink in externalLinks" :key="externalLink.url">
           <NuxtLink
-            to="/leeftijdsgroepen"
-            class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
-            @click="closeMenu"
-          >
-            Leeftijdsgroepen
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="/contact"
-            class="flex items-center px-6 py-3 hover:bg-gray-50 transition-colors"
-            @click="closeMenu"
-          >
-            Contact
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="https://thunderball.ksaizegem.be"
+            :to="externalLink.url"
             target="_blank"
             class="flex items-center gap-2 px-6 py-3 hover:bg-gray-50 transition-colors"
             @click="closeMenu"
           >
-            Thunderball
-            <Icon
-              name="i-heroicons-arrow-top-right-on-square-20-solid"
-              class="w-4 h-4"
-            />
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink
-            to="https://shop.ksaizegem.be"
-            target="_blank"
-            class="flex items-center gap-2 px-6 py-3 hover:bg-gray-50 transition-colors"
-            @click="closeMenu"
-          >
-            Webshops
+            {{ externalLink.title }}
             <Icon
               name="i-heroicons-arrow-top-right-on-square-20-solid"
               class="w-4 h-4"
@@ -142,12 +102,12 @@
         </li>
         <li class="border-t border-gray-200 mt-2 pt-2">
           <NuxtLink
-            to="https://shop.ksaizegem.be/tokshop"
+            :to="specialButton.url"
             target="_blank"
             class="flex items-center justify-center gap-2 mx-6 my-3 px-4 py-3 rounded-full border-2 border-orange-500 text-orange-500 hover:bg-orange-600 hover:text-white transition"
             @click="closeMenu"
           >
-            Inschrijven
+            {{ specialButton.title }}
             <Icon
               name="i-heroicons-arrow-top-right-on-square-20-solid"
               class="w-4 h-4"
@@ -161,6 +121,40 @@
 
 <script setup>
   const isMenuOpen = ref(false);
+
+  // Navigation links configuration
+  const navigationLinks = [
+    {
+      title: 'Home',
+      url: '/',
+    },
+    {
+      title: 'Leeftijdsgroepen',
+      url: '/leeftijdsgroepen',
+    },
+    {
+      title: 'Contact',
+      url: '/contact',
+    },
+  ];
+
+  // External links configuration
+  const externalLinks = [
+    {
+      title: 'Thunderball',
+      url: 'https://thunderball.ksaizegem.be',
+    },
+    {
+      title: 'Webshops',
+      url: 'https://shop.ksaizegem.be',
+    },
+  ];
+
+  // Special button configuration
+  const specialButton = {
+    title: 'Inschrijven',
+    url: 'https://shop.ksaizegem.be/tokshop',
+  };
 
   const closeMenu = () => {
     isMenuOpen.value = false;
