@@ -84,7 +84,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'KSA Izegem: sinds 1927 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten / evenementen.',
+            'KSA Izegem: sinds 1928 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten / evenementen.',
         },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
@@ -106,7 +106,7 @@ export default defineNuxtConfig({
     url: 'https://ksaizegem.be',
     name: 'KSA Izegem',
     description:
-      'KSA Izegem: sinds 1927 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten voor kinderen en jongeren in Izegem.',
+      'KSA Izegem: sinds 1928 plezier met zaterdagnamiddagspelletjes, kampen, weekends en activiteiten voor kinderen en jongeren in Izegem.',
     defaultLocale: 'nl-BE',
   },
 });

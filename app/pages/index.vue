@@ -3,10 +3,10 @@
   useSeoMeta({
     title: 'Home',
     description:
-      'KSA Izegem biedt sinds 1927 plezier voor kinderen en jongeren met zaterdagnamiddagspelletjes, kampen, weekends en leuke activiteiten in Izegem.',
+      'KSA Izegem biedt sinds 1928 plezier voor kinderen en jongeren met zaterdagnamiddagspelletjes, kampen, weekends en leuke activiteiten in Izegem.',
     ogTitle: 'KSA Izegem',
     ogDescription:
-      'Ontdek KSA Izegem: een jeugdbeweging vol avontuur, vriendschap en plezier voor alle leeftijdsgroepen. Sinds 1927 actief in Izegem.',
+      'Ontdek KSA Izegem: een jeugdbeweging vol avontuur, vriendschap en plezier voor alle leeftijdsgroepen. Sinds 1928 actief in Izegem.',
     ogImage: '/index-hero.jpeg',
     ogImageAlt: 'KSA Izegem kinderen aan het spelen',
     ogType: 'website',
